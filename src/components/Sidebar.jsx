@@ -1,7 +1,6 @@
 import { ChevronDownIcon, HomeIcon, ClipboardIcon,Squares2X2Icon, TruckIcon,SpeakerWaveIcon,
 ChartBarIcon, BanknotesIcon, WrenchIcon, CloudIcon, WalletIcon} from "@heroicons/react/24/outline";
 import logo from "../Resources/Logo.jpg";
-import { useState } from "react";
 
 const Sidebar = () => {
     const sidebarItems= [
