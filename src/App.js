@@ -7,7 +7,6 @@ function App() {
     <div className='grid grid-cols-12 w-full h-screen'>
       <Sidebar />
       <MainComponent />
-      
     </div>
   );
 }

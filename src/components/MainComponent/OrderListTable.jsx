@@ -1,10 +1,9 @@
 import {
-  MagnifyingGlassIcon,
   ArrowsUpDownIcon,
   ArrowDownOnSquareIcon,ChevronLeftIcon,ChevronRightIcon
-
-
 } from "@heroicons/react/24/outline";
+
+import {MagnifyingGlassIcon} from '@heroicons/react/24/solid';
 
 const OrderListTable = () => {
   const tableRowData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,  11, 12, 13, 14, 15];
@@ -15,7 +14,7 @@ const OrderListTable = () => {
         <div class="relative">
           <input
             type="text"
-            class="pl-10 pr-4 py-2 border rounded-md  w-52 outline-none text-sm"
+            class="pl-10 pr-4 py-2 border rounded-md  w-52 outline-none text-sm  text-dark-gray-icon"
             placeholder="Search by order ID..."
           />
           <div
@@ -23,7 +22,7 @@ const OrderListTable = () => {
                     flex items-center  
                     pointer-events-none"
           >
-            <MagnifyingGlassIcon className="h-5 w-5" />
+            <MagnifyingGlassIcon className="h-5 w-5 fill-dark-gray-icon" />
           </div>
         </div>
         <div className="flex items-center gap-2">

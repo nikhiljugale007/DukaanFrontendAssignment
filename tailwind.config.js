@@ -15,7 +15,10 @@ module.exports = {
         'btn-background-faint-blue':'#4b567a',
         'light-gray':'#F2F2F2',
         'main-page-bg':'#FAFAFA',
-        'text-clr-blue':'#146EB4'
+        'text-clr-blue':'#146EB4',
+        'light-blue-bg':'#494F64',
+        'dark-gray-bg':'#4C4C4C',
+        'dark-gray-icon':'#828282'
       }
     },
   },
