@@ -4,7 +4,7 @@ import logo from "../Resources/Logo.jpg";
 import { useState } from "react";
 
 const Sidebar = () => {
-    const [sidebarItems,setSidebarItems] = useState([
+    const sidebarItems= [
         {Icon:ClipboardIcon,Title:'Home'},
         {Icon:HomeIcon,Title:'Orders'},
         {Icon:Squares2X2Icon,Title:'Products'},
@@ -17,7 +17,7 @@ const Sidebar = () => {
         {Icon:CloudIcon,Title:'Audience'},
         {Icon:CloudIcon,Title:'Appearance'},
         {Icon:CloudIcon,Title:'Plugins'}
-    ]);
+    ];
 
     const sidebarMenu = sidebarItems.map((item,index) => {
         const {Icon,Title} = item;
