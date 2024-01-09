@@ -1,12 +1,15 @@
 import {
   ArrowsUpDownIcon,
-  ArrowDownOnSquareIcon,ChevronLeftIcon,ChevronRightIcon
+  ArrowDownOnSquareIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 
-import {MagnifyingGlassIcon} from '@heroicons/react/24/solid';
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 
 const OrderListTable = () => {
-  const tableRowData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,  11, 12, 13, 14, 15];
+  const tableRowData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
   return (
     <div className="px-2">
@@ -14,7 +17,7 @@ const OrderListTable = () => {
         <div class="relative">
           <input
             type="text"
-            class="pl-10 pr-4 py-2 border rounded-md  w-52 outline-none text-sm  text-dark-gray-icon"
+            class="pl-10 pr-4 py-2 border rounded-md  w-52 outline-none text-sm  text-primary-gray"
             placeholder="Search by order ID..."
           />
           <div
@@ -22,7 +25,7 @@ const OrderListTable = () => {
                     flex items-center  
                     pointer-events-none"
           >
-            <MagnifyingGlassIcon className="h-5 w-5 fill-dark-gray-icon" />
+            <MagnifyingGlassIcon className="h-5 w-5 fill-primary-gray" />
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -45,7 +48,7 @@ const OrderListTable = () => {
           <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div className="overflow-hidden">
               <table className="min-w-full text-left text-sm table-auto">
-                <thead className="bg-light-gray rounded-md">
+                <thead className="bg-bg-light-gray rounded-md">
                   <tr>
                     <th scope="col" className="px-6 py-4 font-medium text-left">
                       Order ID
@@ -66,7 +69,10 @@ const OrderListTable = () => {
                       scope="col"
                       className="px-6 py-4 font-medium text-right"
                     >
-                      Transaction fees
+                      <div className="flex items-center gap-2 justify-center">
+                        Transaction fees
+                        <InformationCircleIcon className="h-4 w-4" />
+                      </div>
                     </th>
                   </tr>
                 </thead>
@@ -74,7 +80,7 @@ const OrderListTable = () => {
                   {tableRowData.map((item) => {
                     return (
                       <tr className="border-b" key={item}>
-                        <td className="whitespace-nowrap px-6 py-4 font-medium text-text-clr-blue text-left">
+                        <td className="whitespace-nowrap px-6 py-4 font-medium text-tertiory-txt-color text-left">
                           #281209
                         </td>
                         <td className="whitespace-nowrap px-6 py-4 w-1/4  text-center">
@@ -89,35 +95,36 @@ const OrderListTable = () => {
                       </tr>
                     );
                   })}
-
                 </tbody>
               </table>
-              
+
               <div className="flex items-center justify-center w-full gap-5 py-2">
-                    <button
-                      class="rounded-md px-4 py-1.5 text-center inline-flex items-center bg-primary-background border"
-                      type="button"
-                    >
-                      <ChevronLeftIcon className="w-4 h-4 me-2" />
-                      <p>Previous</p> 
-                    </button>
-                    <div className="flex gap-4 items-center text-primary-txt-color">
-                      <p>1</p>
-                      <p>...</p>
-                      <p className="bg-text-clr-blue text-secondary-txt-color px-2 py-1 rounded-md">10</p>
-                      <p>11</p>
-                      <p>12</p>
-                      <p>13</p>
-                      <p>14</p>
-                      <p>15</p>
-                    </div>
-                    <button
-                      class="rounded-md px-4 py-1.5 text-center inline-flex items-center bg-primary-background border"
-                      type="button"
-                    >
-                      <p>Next</p> <ChevronRightIcon className="w-4 h-4 ms-2" />
-                    </button>
-                  </div>
+                <button
+                  class="rounded-md px-4 py-1.5 text-center inline-flex items-center bg-primary-background border"
+                  type="button"
+                >
+                  <ChevronLeftIcon className="w-4 h-4 me-2" />
+                  <p>Previous</p>
+                </button>
+                <div className="flex gap-4 items-center text-primary-txt-color">
+                  <p>1</p>
+                  <p>...</p>
+                  <p className="bg-tertiory-txt-color text-secondary-txt-color px-2 py-1 rounded-md">
+                    10
+                  </p>
+                  <p>11</p>
+                  <p>12</p>
+                  <p>13</p>
+                  <p>14</p>
+                  <p>15</p>
+                </div>
+                <button
+                  class="rounded-md px-4 py-1.5 text-center inline-flex items-center bg-primary-background border"
+                  type="button"
+                >
+                  <p>Next</p> <ChevronRightIcon className="w-4 h-4 ms-2" />
+                </button>
+              </div>
             </div>
           </div>
         </div>

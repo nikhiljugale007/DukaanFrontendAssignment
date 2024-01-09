@@ -65,7 +65,7 @@ const Sidebar = () => {
         <div className="px-0 py-4">{sidebarMenu}</div>
       </div>
       <div className="flex items-center gap-2 bg-tertiory-background rounded-md">
-        <div className="p-1 m-2 rounded-md bg-light-blue-bg">
+        <div className="p-1 m-2 rounded-md bg-bg-light-blue">
           <WalletIcon className="h-8 w-8" />
         </div>
         <div className="text-sm">

@@ -20,7 +20,7 @@ const TitleBar = () => {
       <div class="relative">
         <input
           type="text"
-          class="pl-10 pr-4 py-2 border rounded-md bg-light-gray w-96 outline-none text-dark-gray-icon"
+          class="pl-10 pr-4 py-2 border rounded-md bg-bg-light-gray w-96 outline-none text-primary-gray"
           placeholder="Search feature, tutorials, etc."
         />
         <div
@@ -28,15 +28,15 @@ const TitleBar = () => {
                     flex items-center  
                     pointer-events-none"
         >
-          <MagnifyingGlassIcon className="h-6 w-6 fill-dark-gray-icon" />
+          <MagnifyingGlassIcon className="h-6 w-6 fill-primary-gray" />
         </div>
       </div>
       <div className="flex gap-4">
-        <button className="rounded-full bg-light-gray p-2">
-          <MegaphoneIcon className="h-6 w-6 fill-dark-gray-bg" />
+        <button className="rounded-full bg-bg-light-gray p-2">
+          <MegaphoneIcon className="h-6 w-6 fill-secondary-gray" />
         </button>
-        <button className="rounded-full bg-light-gray p-2">
-          <ArrowDownCircleIcon className="h-6 w-6 fill-dark-gray-bg" />
+        <button className="rounded-full bg-bg-light-gray p-2">
+          <ArrowDownCircleIcon className="h-6 w-6 fill-secondary-gray" />
         </button>
       </div>
     </div>
