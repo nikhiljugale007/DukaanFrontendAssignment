@@ -69,7 +69,7 @@ const OrderListTable = () => {
                       scope="col"
                       className="px-6 py-4 font-medium text-right"
                     >
-                      <div className="flex items-center gap-2 justify-center">
+                      <div className="flex items-center gap-2 justify-end">
                         Transaction fees
                         <InformationCircleIcon className="h-4 w-4" />
                       </div>
