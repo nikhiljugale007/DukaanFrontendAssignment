@@ -4,9 +4,9 @@ import MainComponent from './components/MainComponent';
 
 function App() {
   return (
-    <div className='grid grid-cols-12 w-full h-screen'>
+    <div className='flex w-full h-screen'>
       <Sidebar />
-      <MainComponent />
+      <MainComponent/>
     </div>
   );
 }

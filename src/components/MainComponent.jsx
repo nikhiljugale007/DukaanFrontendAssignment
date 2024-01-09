@@ -5,7 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const MainComponent = () => {
   return (
-    <div className="col-span-10 h-screen overflow-y-auto">
+    <div className="h-screen overflow-y-auto grow">
       <TitleBar />
 
       <div className="flex justify-between px-8 py-4 bg-main-page-bg">

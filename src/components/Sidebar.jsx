@@ -43,7 +43,7 @@ const Sidebar = () => {
     );
   });
   return (
-    <div className="col-span-2 bg-secondary-background text-secondary-txt-color h-screen flex flex-col justify-between p-4">
+    <div className="w-60 flex-none bg-secondary-background text-secondary-txt-color h-screen flex flex-col justify-between p-4">
       <div className="flex flex-col">
         <div className="flex justify-between">
           <div className="flex flex-row gap-2">
