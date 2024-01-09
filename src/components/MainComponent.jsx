@@ -19,7 +19,7 @@ const MainComponent = () => {
       </div>
       <CardComponent />
       <div className=" px-8 py-4 font-semibold">Transaction | This month</div>
-      <div className="mx-8 rounded-md bg-primary-background shadow-lg">
+      <div className="mx-8 rounded-md bg-primary-background shadow-md">
         <OrderListTable />
       </div>
     </div>
